@@ -1,40 +1,64 @@
-# bmi.tracker
+# 🧠 bmi.tracker
 
-> A full-stack BMI calculator with persistent history — built with Spring Boot & vanilla JS.
-
-![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-CSS3-E34F26?style=flat-square&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+> **A sleek full-stack BMI tracker with persistent history — built with Spring Boot & vanilla JavaScript.**  
+> Track your health. See your progress. Stay consistent.
 
 ---
 
-## Overview
-
-**bmi.tracker** is a sleek, dark-themed web application that calculates your Body Mass Index in both **metric** and **imperial** units and stores every result in a database so you can track your progress over time.
-
-The frontend is a zero-dependency, single-page app. The backend is a RESTful Spring Boot API backed by JPA / any relational database.
-
----
-
-## Features
-
-- ⚡ **Instant BMI calculation** — metric (m / kg) and imperial (in / lbs) support
-- 🗂️ **Persistent history** — every result is saved and displayed in a clean timeline
-- 🎨 **Color-coded categories** — Underweight · Normal · Overweight · Obese
-- 📱 **Fully responsive** — works great on mobile and desktop
-- 🔌 **REST API** — easy to integrate with any other client
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5/CSS3-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
-## Tech Stack
+## ✨ Overview
+
+**bmi.tracker** is a clean, responsive web application that calculates your Body Mass Index (BMI) in both **metric** and **imperial** units.
+
+Every calculation is stored in a database, allowing you to **track your health journey over time** through a beautiful history timeline.
+
+- ⚡ Instant BMI calculation  
+- 🗂️ Persistent history tracking  
+- 🎨 Smart color-coded health categories  
+- 📱 Fully responsive UI  
+- 🔌 RESTful backend API  
+
+---
+
+## 🚀 Features
+
+### ⚡ Smart BMI Calculator
+Supports both:
+- Metric → kg / m  
+- Imperial → lbs / inches  
+
+### 🗂️ History Tracking
+Every result is saved automatically and displayed chronologically.
+
+### 🎨 Visual Health Indicators
+- 🔵 Underweight  
+- 🟢 Normal weight  
+- 🟡 Overweight  
+- 🔴 Obese  
+
+### 📱 Responsive Design
+Works seamlessly on mobile, tablet, and desktop.
+
+### 🔌 Clean REST API
+Easily extendable or connectable to other frontends.
+
+---
+
+## 🛠️ Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Backend | Java 17+, Spring Boot 3, Spring Data JPA |
-| Database | Any JPA-compatible DB (H2, MySQL, PostgreSQL…) |
-| Frontend | HTML5, CSS3, JS (no frameworks) |
-| Fonts | Syne · DM Sans (Google Fonts) |
+|------|------------|
+| Backend | Java 17+, Spring Boot 3 |
+| Data | Spring Data JPA |
+| Database | H2 / MySQL / PostgreSQL |
+| Frontend | HTML5, CSS3, Vanilla JavaScript |
+| UI Style | Dark-themed, minimal design |
 
 ---
 
