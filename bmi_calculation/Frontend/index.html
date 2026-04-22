@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">bmi<span>.</span>tracker</div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-page="calculate">Calculate</button>
+      <button class="nav-tab" data-page="history">History</button>
+    </div>
+  </nav>
+
+  <!-- CALCULATE PAGE -->
+  <main class="main" id="page-calculate">
+    <h1 class="page-title">Calculate BMI</h1>
+    <p class="page-subtitle" id="unit-subtitle">Enter height in meters and weight in kg</p>
+
+    <div class="unit-toggle">
+      <button class="unit-btn active" data-unit="metric">Metric (m / kg)</button>
+      <button class="unit-btn" data-unit="imperial">Imperial (in / lbs)</button>
+    </div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label class="field-label" id="height-label">Height (meters)</label>
+        <input class="field-input" type="number" id="height-input" placeholder="e.g. 1.75" step="0.01" />
+      </div>
+      <div class="field">
+        <label class="field-label" id="weight-label">Weight (kg)</label>
+        <input class="field-input" type="number" id="weight-input" placeholder="e.g. 70" step="0.1" />
+      </div>
+    </div>
+
+    <button class="calc-btn" id="calc-btn">Calculate BMI</button>
+
+    <div class="error-msg hidden" id="calc-error"></div>
+
+    <div class="result-card hidden" id="result-card">
+      <div class="result-left">
+        <div class="result-value" id="result-value">--</div>
+        <div class="result-unit">BMI</div>
+      </div>
+      <div class="result-right">
+        <span class="badge" id="result-badge"></span>
+        <div class="result-category" id="result-category"></div>
+        <div class="result-desc" id="result-desc"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HISTORY PAGE -->
+  <main class="main hidden" id="page-history">
+    <div class="history-header">
+      <div>
+        <h1 class="page-title">History</h1>
+        <p class="page-subtitle">All saved BMI records</p>
+      </div>
+      <span class="history-count" id="history-count"></span>
+    </div>
+
+    <div class="error-msg hidden" id="history-error"></div>
+    <div class="loading hidden" id="history-loading">Loading records...</div>
+
+    <div class="empty-state hidden" id="empty-state">
+      <div class="empty-icon">◎</div>
+      <div class="empty-text">No records yet. Calculate your first BMI!</div>
+    </div>
+
+    <div class="history-list" id="history-list"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
