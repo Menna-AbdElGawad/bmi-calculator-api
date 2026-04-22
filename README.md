@@ -32,7 +32,7 @@ Every calculation is stored in a database, allowing you to **track your health j
 
 ### 🖥️ Metric Calculator
 ![Main Calculator](assets/screenshots/metricCalculator.png)
-*BMI Calculator with metric & imperial unit support*
+*Metric unit Calculations*
 
 ### 🗂️ History Timeline
 ![History Timeline](assets/screenshots/history.png)
@@ -40,7 +40,7 @@ Every calculation is stored in a database, allowing you to **track your health j
 
 ### 🎨 Imperial Calculator
 ![Health Categories](assets/screenshots/imperialCalculator.png)
-*Color-coded results — Underweight · Normal · Overweight · Obese*
+*Imperial unit Calculations*
 
 
 </div>
