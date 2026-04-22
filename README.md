@@ -26,6 +26,27 @@ Every calculation is stored in a database, allowing you to **track your health j
 
 ---
 
+## 📸 Screenshots
+
+<div align="center">
+
+### 🖥️ Metric Calculator
+![Main Calculator](assets/screenshots/metricCalculator.png)
+*BMI Calculator with metric & imperial unit support*
+
+### 🗂️ History Timeline
+![History Timeline](assets/screenshots/history.png)
+*Full history of all your BMI records over time*
+
+### 🎨 Imperial Calculator
+![Health Categories](assets/screenshots/imperialCalculator.png)
+*Color-coded results — Underweight · Normal · Overweight · Obese*
+
+
+</div>
+
+---
+
 ## 🚀 Features
 
 ### ⚡ Smart BMI Calculator
@@ -77,10 +98,16 @@ Easily extendable or connectable to other frontends.
 │       ├── BMIRestController.java      # POST /api/bmi/calculate
 │       └── SaveResultRestController.java# GET /api/bmi/history
 │
-└── frontend/
-    ├── index.html
-    ├── style.css
-    └── app.js
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+│
+└── assets/
+    └── screenshots/
+        ├── metricCalculator.png
+        ├── history.png
+        └── imperialCalculator.png
 ```
 
 ---
